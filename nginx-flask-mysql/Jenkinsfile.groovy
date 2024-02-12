@@ -7,7 +7,7 @@ pipeline {
         stage('Build backend image') {
             steps {
                 echo 'Building backend image'
-                backendImage = docker.build("flaskbackend", "-f ./backend/Dockerfile")
+                def backendImage = docker.build("flaskbackend", "-f ./backend/Dockerfile")
             }
         }
         stage('Build nginx image') {
