@@ -28,6 +28,7 @@
 //         }
 //     }
 // }
+def abc = "123"
 
 node (label: "docker") {
     stage("build nginx image") {
