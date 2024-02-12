@@ -32,7 +32,7 @@ def abc = "123"
 
 node (label: "docker") {
     stage("build nginx image") {
-        def customImage = docker.build("nginx-image:${env.BUILD_ID}", "./proxy/Dockerfile")
+        def customImage = docker.build "nginx-image:${env.BUILD_ID}"
 
         customImage.inside {
             sh 'echo yoyo'
