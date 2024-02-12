@@ -29,7 +29,7 @@
 //     }
 // }
 
-node (label: "build") {
+node (label: "docker") {
     stage("build nginx image") {
         def customImage = docker.build("nginx-image:${env.BUILD_ID}", "./proxy/Dockerfile")
 
