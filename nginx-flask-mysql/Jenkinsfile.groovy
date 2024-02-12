@@ -31,7 +31,7 @@
 def abc = "123"
 
 node (label: "docker") {
-    def abc = "123"
+    abc = "123"
     // stage("build nginx image") {
     //     def customImage = docker.build "nginx-image:${env.BUILD_ID}"
 
