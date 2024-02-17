@@ -36,7 +36,7 @@ node (label: "docker") {
          abc = "sdf"
          checkout scm
         sh "ls"
-         def dockerImage = docker.build "nginx-image:${env.BUILD_ID}"
+         def dockerImage = docker.build("nginx-image:${env.BUILD_ID}", "nginx-flask-mysql/Dockerfile")
 
     //     customImage.inside {
     //         sh 'echo yoyo'
