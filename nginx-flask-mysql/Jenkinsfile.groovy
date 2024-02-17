@@ -35,6 +35,7 @@ node (label: "docker") {
     stage("build nginx image") {
          abc = "sdf"
          checkout scm
+        sh "ls"
          def dockerImage = docker.build "nginx-image:${env.BUILD_ID}"
 
     //     customImage.inside {
