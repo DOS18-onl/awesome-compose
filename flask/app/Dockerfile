@@ -14,6 +14,8 @@ CMD ["app.py"]
 
 FROM builder as dev-envs
 
+RUN ls
+
 RUN <<EOF
 apk update
 apk add git
