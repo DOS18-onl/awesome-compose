@@ -62,4 +62,4 @@ Stop and remove the containers
 ```
 $ docker compose down
 ```
-___
+____
